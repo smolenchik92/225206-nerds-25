@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Евгений Смоленцев](https://up.htmlacademy.ru/htmlcss/25/user/225206).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
