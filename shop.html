@@ -34,6 +34,58 @@
     </header>
     <main class="container">
       <section class="items">
+        <h2 class="visually-hidden">Выбор сайта</h2>
+        <div class="items-sort">
+          <p>
+            <b>Сортировать:</b>
+          </p>
+          <ul class="items-sort-options">
+            <li>
+              <button>По цене</button>
+            </li>
+            <li>
+              <button>По типу</button>
+            </li>
+            <li>
+              <button>По названию</button>
+            </li>
+          </ul>
+          <ul class="items-sort-order">
+            <li>descending</li>
+            <li>ascending</li>
+          </ul>
+        </div>
+        <div class="items-filter">
+          <div class="items-filter-pricing">
+            <p>
+              <b>Стоимость:</b>
+            </p>
+            <!-- место под слайдер и поля для чисел -->
+          </div>
+          <div class="items-filter-grid">
+            <p>
+              <b>Сетка:</b>
+            </p>
+            <form>
+              <input type="radio">Адаптивная<br>
+              <input type="radio">Фиксированная<br>
+              <input type="radio">Резиновая
+            </form>
+          </div>
+          <div class="items-filter-checkbox">
+            <p>
+              <b>Особенности:</b>
+            </p>
+            <form>
+              <input type="checkbox" checked>Слайдер<br>
+              <input type="checkbox">Блок преимуществ<br>
+              <input type="checkbox" checked>Новости<br>
+              <input type="checkbox">Галерея<br>
+              <input type="checkbox">Корзина
+            </form>
+          </div>
+          <input type="submit" value="Показать">
+        </div>
         <ul class="items-list">
           <li>
             <div class="items-header"></div>
@@ -78,6 +130,7 @@
         </div>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Как нас найти</h2>
 <!-- место под карту -->
       </section>
     </main>
