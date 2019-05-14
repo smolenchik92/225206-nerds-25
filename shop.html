@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">
+      <a href="#" class="main-header-logo">
         <img src="http://placehold.it/150x100" alt="Дизайн-студия Нёрдс">
       </a>
       <nav class="main-navigation">
@@ -15,101 +15,99 @@
             <a href="index.html">Студия</a>
           </li>
           <li>
-            <a href="customers.html">Клиенты</a>
+            <a href="#">Клиенты</a>
           </li>
-          <li class="site-navigation-current">
-            <a href="shop.html">Магазин</a>
-          </li>
+          <li class="site-navigation-current">Магазин</li>
           <li>
-            <a href="contacts.html">Контакты</a>
+            <a href="#">Контакты</a>
           </li>
         </ul>
         <ul class="cart-navigation">
           <li>
-            <a href="cart.html">Корзина</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <aside class="forms">
+        <!-- с твоего позволения сделаю с бОльшим пониманием после лекции о формах -->
+      </aside>
       <section class="items">
         <h2 class="visually-hidden">Выбор сайта</h2>
         <div class="items-sort">
-          <p>
-            <b>Сортировать:</b>
-          </p>
+          <p class="title">Сортировать:</p>
+          <!-- можно ли объединить в единый список ссылок? -->
           <ul class="items-sort-options">
             <li>
-              <button>По цене</button>
+              <a href="#">По цене</a>
             </li>
             <li>
-              <button>По типу</button>
+              <a href="#">По типу</a>
             </li>
             <li>
-              <button>По названию</button>
+              <a href="#">По названию</a>
             </li>
           </ul>
           <ul class="items-sort-order">
-            <li>descending</li>
-            <li>ascending</li>
+            <li>
+              <a href="#">descending</a>
+            </li>
+            <li>
+              <a href="#">ascending</a>
+            </li>
           </ul>
         </div>
-        <div class="items-filter">
-          <div class="items-filter-pricing">
-            <p>
-              <b>Стоимость:</b>
-            </p>
-            <!-- место под слайдер и поля для чисел -->
-          </div>
-          <div class="items-filter-grid">
-            <p>
-              <b>Сетка:</b>
-            </p>
-            <form>
-              <input type="radio">Адаптивная<br>
-              <input type="radio">Фиксированная<br>
-              <input type="radio">Резиновая
-            </form>
-          </div>
-          <div class="items-filter-checkbox">
-            <p>
-              <b>Особенности:</b>
-            </p>
-            <form>
-              <input type="checkbox" checked>Слайдер<br>
-              <input type="checkbox">Блок преимуществ<br>
-              <input type="checkbox" checked>Новости<br>
-              <input type="checkbox">Галерея<br>
-              <input type="checkbox">Корзина
-            </form>
-          </div>
-          <input type="submit" value="Показать">
-        </div>
         <ul class="items-list">
+          <!-- можно ли div вкладывать в li? -->
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="sedona">
+            <div>
+              <h4>Sedona</h4>
+              <p>Информационный сайт для туристов</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="pink">
+            <div>
+              <h4>Pink app</h4>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="borodinski">
+            <div>
+              <h4>Barbershop</h4>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="mishka">
+            <div>
+              <h4>Mishka</h4>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="A+">
+            <div>
+              <h4>A Plus</h4>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
           <li>
-            <div class="items-header"></div>
             <img src="http://placehold.it/150x100" alt="кваст">
+            <div>
+              <h4>Кваст</h4>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a>9 900 руб.</a>
+            </div>
           </li>
         </ul>
         <div class="pagination">
@@ -131,7 +129,14 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-<!-- место под карту -->
+        <img src="http://placehold.it/150x100" alt="Карта">
+        <div class="contacts">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <!-- ссылка или кнопка -->
+          <a href="#">Напишите нам</a>
+        </div>
       </section>
     </main>
     <footer>
@@ -149,9 +154,7 @@
         </ul>
       </section>
       <div>
-        <p>
-          <b>Давайте дружить, это выгодно!</b>
-        </p>
+        <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
