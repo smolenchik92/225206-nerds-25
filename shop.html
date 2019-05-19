@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <a href="#" class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Дизайн-студия Нёрдс">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -32,8 +32,59 @@
     </header>
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <aside class="forms">
-        <!-- с твоего позволения сделаю с бОльшим пониманием после лекции о формах -->
+      <aside class="form">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post" name="filter">
+          <p class="title">Стоимость:</p>
+          <!-- место под range и output -->
+          <p class="title">Сетка:</p>
+          <!-- или вместо <p> нужен <legend> в <fieldset>? -->
+          <ul class="filter_radio">
+            <li>
+              <label>
+                <input type="radio" name="grid_type" value="Адаптивная" checked>Адаптивная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="grid_type" value="Фиксированная">Фиксированная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="grid_type" value="Резиновая">Резиновая
+              </label>
+            </li>
+          </ul>
+          <p class="title">Особенности:</p>
+          <ul class="filter_checkbox">
+            <li>
+              <label>
+                <input type="checkbox" value="Slider" name="Attributes" checked>Слайдер
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="Advantages_block" name="Attributes">Блок преимуществ
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="News" name="Attributes" checked>Новости
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="Gallery" name="Attributes">Галерея
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="Cart" name="Attributes">Корзина
+              </label>
+            </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </form>
       </aside>
       <section class="items">
         <h2 class="visually-hidden">Выбор сайта</h2>
@@ -60,51 +111,50 @@
           </ul>
         </div>
         <ul class="items-list">
-          <!-- можно ли div вкладывать в li? -->
           <li>
-            <img src="img/img-sedona.jpg" width="360px" height="576px" alt="sedona">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
             <div>
-              <h4>Sedona</h4>
+              <a href=#>Sedona</a>
               <p>Информационный сайт для туристов</p>
               <a>9 900 руб.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-pink.jpg" width="360px" height="576px" alt="pink">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="pink">
             <div>
-              <h4>Pink app</h4>
+              <a href=#>Pink app</a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a>9 900 руб.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-barbershop.jpg" width="360px" height="576px" alt="borodinski">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski">
             <div>
-              <h4>Barbershop</h4>
+              <a href=#>Barbershop</a>
               <p>Сайт салона красоты. Для мужчин, да.</p>
               <a>9 900 руб.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-mishka.jpg" width="360px" height="576px" alt="mishka">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
             <div>
-              <h4>Mishka</h4>
+              <a href=#>Mishka</a>
               <p>Интернет-магазин вязаных игрушек</p>
               <a>9 900 руб.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-aplus.jpg" width="360px" height="576px" alt="A+">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
             <div>
-              <h4>A Plus</h4>
+              <a href=#>A Plus</a>
               <p>Лендинг курсов повышения квалификации</p>
               <a>9 900 руб.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-kvast.jpg" width="360px" height="576px" alt="кваст">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="кваст">
             <div>
-              <h4>Кваст</h4>
+              <a href=#>Кваст</a>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a>9 900 руб.</a>
             </div>
@@ -139,6 +189,27 @@
         <a href="#">Напишите нам</a>
       </div>
     </section>
+    <div class="popup">
+      <a href="#" aria-label="Закрыть форму обратной связи">
+        <img src="img/close-cross.svg" alt="Закрыть">
+      </a>
+      <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+          <h2>Напишите нам</h2>
+          <label class="title">
+            Ваше имя:
+            <input name="your_name" type="text" placeholder="Имя Фамилия" required>
+          </label>
+          <label class="title">
+            Ваш e-mail:
+            <input name="email" type="text" placeholder="email@example.com" required>
+          </label>
+          <label class="title">
+            Текст письма:
+            <textarea name="text" placeholder="В свободной форме" required></textarea>
+          </label>
+          <button type="submit" value="Отправить">Отправить</button>
+      </form>
+    </div>
     <footer>
       <section class="social">
         <ul class="social-list">
