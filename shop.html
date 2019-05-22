@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="main-header">
-      <a href="#" class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
+    <header>
+      <nav class="navigation">
+        <a href="index.html">
+          <img class="main_logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
+        </a>
+        <ul class="navigation_list">
           <li>
-            <a href="index.html">Студия</a>
+            <a href="#">Студия</a>
           </li>
           <li>
             <a href="#">Клиенты</a>
           </li>
-          <li class="site-navigation-current">Магазин</li>
+          <li>
+            <a href="shop.html" class="navigation_active">Магазин</a>
+          </li>
           <li>
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="cart-navigation">
+        <ul class="navigation_cart">
           <li>
-            <!--- иконку корзины не подключал, т.к. декоративный элемент, а не контентный -->
-            <a href="#">Корзина</a>
+            <a href="#">
+              <img class="cart_icon" src="img/cart-icon.svg">
+              <span>Корзина</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <h1 class="visually-hidden">Каталог</h1>
+      <h2 class="page_header">Магазин готовых шаблонов</h2>
       <aside class="form">
         <form class="filter" action="https://echo.htmlacademy.ru" method="post" name="filter">
-          <p class="title">Стоимость:</p>
-          <!-- место под range и output -->
-          <p class="title">Сетка:</p>
+          <fieldset class="price_range">
+            <legend>Стоимость:</legend>
+            <ul>
+              <li><input type="range">
+              </li>
+              <li>
+                <label>
+                  От
+                  <input type="text" name="price" placeholder="0">
+                </label>
+                <label>
+                  До
+                  <input type="text" name="price" placeholder="15000">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
           <!-- или вместо <p> нужен <legend> в <fieldset>? -->
           <ul class="filter_radio">
             <li>
               <label>
-                <input type="radio" name="grid_type" value="Адаптивная" checked>Адаптивная
+                <input type="radio" name="grid_type" value="adaptive" checked>Адаптивная
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="grid_type" value="Фиксированная">Фиксированная
+                <input type="radio" name="grid_type" value="fixed">Фиксированная
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="grid_type" value="Резиновая">Резиновая
+                <input type="radio" name="grid_type" value="flex">Резиновая
               </label>
             </li>
           </ul>
-          <p class="title">Особенности:</p>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
           <ul class="filter_checkbox">
             <li>
               <label>
-                <input type="checkbox" value="Slider" name="Attributes" checked>Слайдер
+                <input type="checkbox" value="slider" name="attributes" checked>Слайдер
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" value="Advantages_block" name="Attributes">Блок преимуществ
+                <input type="checkbox" value="advantages_block" name="attributes">Блок преимуществ
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" value="News" name="Attributes" checked>Новости
+                <input type="checkbox" value="news" name="attributes" checked>Новости
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" value="Gallery" name="Attributes">Галерея
+                <input type="checkbox" value="gallery" name="attributes">Галерея
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" value="Cart" name="Attributes">Корзина
+                <input type="checkbox" value="cart" name="attributes">Корзина
               </label>
             </li>
           </ul>
-          <button type="submit">Показать</button>
+          </fieldset>
+          <button class="send_form" type="submit">Показать</button>
         </form>
       </aside>
       <section class="items">
         <h2 class="visually-hidden">Выбор сайта</h2>
-        <div class="items-sort">
-          <p class="title">Сортировать:</p>
-          <ul class="items-sort-options">
+        <div class="items_sort">
+          <p class="sort_title">Сортировать:</p>
+          <ul class="items_sort--options">
             <li>
               <a href="#">По цене</a>
             </li>
@@ -101,7 +128,7 @@
               <a href="#">По названию</a>
             </li>
           </ul>
-          <ul class="items-sort-order">
+          <ul class="items_sort--order">
             <li>
               <a href="#">descending</a>
             </li>
@@ -110,60 +137,60 @@
             </li>
           </ul>
         </div>
-        <ul class="items-list">
+        <ul class="items_list">
           <li>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
-            <div>
-              <a href=#>Sedona</a>
+            <div class="popup">
+              <a href="#">Sedona</a>
               <p>Информационный сайт для туристов</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/img-pink.jpg" width="360" height="576" alt="pink">
-            <div>
+            <div class="popup">
               <a href=#>Pink app</a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski">
-            <div>
+            <div class="popup">
               <a href=#>Barbershop</a>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
-            <div>
+            <div class="popup">
               <a href=#>Mishka</a>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
-            <div>
+            <div class="popup">
               <a href=#>A Plus</a>
               <p>Лендинг курсов повышения квалификации</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="кваст">
-            <div>
+            <div class="popup">
               <a href=#>Кваст</a>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a>9 900 руб.</a>
+              <a href="#">9 900 руб.</a>
             </div>
           </li>
         </ul>
         <div class="pagination">
-          <ul class="pagination-list">
-            <li class="pagination-current">
-              <a href="#">1</a>
+          <ul class="pagination_list">
+            <li></li>
+              <a class="pagination-current" href="#">1</a>
             </li>
             <li>
               <a href="#">2</a>
@@ -185,16 +212,13 @@
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <!-- Ссылка, открывающая окно через JS? -->
-        <a href="#">Напишите нам</a>
+        <button class="contact_button link_red link_text">Напишите нам</button>
       </div>
     </section>
     <div class="popup">
-      <a href="#" aria-label="Закрыть форму обратной связи">
-        <img src="img/close-cross.svg" alt="Закрыть">
-      </a>
+      <button aria-label="Закрыть форму обратной связи">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-          <h2>Напишите нам</h2>
+          <h3>Напишите нам</h3>
           <label class="title">
             Ваше имя:
             <input name="your_name" type="text" placeholder="Имя Фамилия" required>
@@ -207,31 +231,31 @@
             Текст письма:
             <textarea name="text" placeholder="В свободной форме" required></textarea>
           </label>
-          <button type="submit" value="Отправить">Отправить</button>
+          <button class="send_message" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
     <footer>
       <section class="social">
-        <ul class="social-list">
+        <ul class="social_list">
           <li>
-            <a href="#">
+            <a class="link_social link_red" href="#">
               <img src="img/vk-icon.svg" alt="VK">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="link_social link_red" href="#">
               <img src="img/fb-icon.svg" alt="FB">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="link_social link_red" href="#">
               <img src="img/insta-icon.svg" alt="Instagram">
             </a>
           </li>
         </ul>
       </section>
-      <div>
-        <h2>Давайте дружить, это выгодно!</h2>
+      <div class="promo">
+        <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
