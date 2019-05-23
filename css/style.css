@@ -9,208 +9,189 @@ body {
   color: #000000;
 }
 
-/* Высота header = 545 (суммарная высота хедера и блока слайдов) - 413 (высота изображения слайда) */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+
 header {
   background-color:#eeeeee;
 }
 
-.page_header {
-  background-color:#eeeeee;
-}
-
-/* Убрал стандартное оформление ссылок, задал курсор наведения на ссылку */
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* НАЧАЛО СТИЛЕЙ ДЛЯ НАВИГАЦИИ */
-
-
-/* Задал общие стили для всего блока */
-.navigation {
+.main-navigation {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-/* Убрал маркеры списка для основного списка и списка для корзины */
-.navigation_list, .navigation_cart {
+.site-navigation, .cart-navigation {
   list-style: none;
 }
 
-/* Добавил реакцию логотипа на наведение и фокус */
-.main_logo:hover, .main_logo:focus {
+.main-header-logo:hover, .main-header-logo:focus {
   opacity: 0.8;
 }
 
-/* Добавил реакцию логотипа на нажатие */
-.main_logo:active {
+.main-header-logo:active {
   opacity: 0.3;
 }
 
-/* Добавил цвет ссылок после того, как они были посещены */
-.navigation_list a:visited, .navigation_cart a:visited {
+.site-navigation a:visited, .cart-navigation a:visited {
   color: black;
 }
 
-/* Добавил реакцию ссылок на наведение и фокус */
-.navigation_list a:hover, .navigation_cart a:hover, .navigation_list a:focus, .navigation_cart a:focus {
+.site-navigation a:hover, .cart-navigation a:hover, .site-navigation a:focus, .cart-navigation a:focus {
   color: #fb565a;
 }
 
-/* Добавил реакцию ссылок на нажатие */
-.navigation_list a:active, .navigation_cart a:active {
+.site-navigation a:active, .cart-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Добавил оформление для ссылки на страницу, на которой нахожусь */
-a.navigation_active {
+a.site-navigation-current {
   text-decoration: underline;
   text-decoration-color: #fb565a;
 }
 
-/* ВОПРОС: иконка корзины вставляется через html код, или вернее это делать через ::before ?? */
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
 
-/* Общий фон, для всего контейнера со слайдерами, на случай если изображения не прогрузятся */
-/* ВОПРОС: Почему само изображение имеет белый фон, и как это исправить? */
-.slide_block {
+.intro {
   background-color: #eeeeee;
 }
 
-/* Общий стиль заголовков */
-.slide h2, .page_header {
+.slide h2, .page-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
-.slide_controls {
+.intro-button-list {
   list-style: none;
 }
 
-/* Общий цвет текста абзацев (кроме карты и footer), остальные параметры стандартны и заданы в body */
-.slide p, .services_list p, .about_left p, .about_left li {
+.slide p, .services-list p,
+.about-left p, .about-left li {
   color: #283136;
 }
 
-/* Общий стиль текста внутри ссылок узнать больше, заказать и кнопки напишите нам */
-.link_text {
+.button {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-/* Прописал цвет фона для ссылок + стили состояния. Дополнить стилем состояния соц ссылок!!*/
-
-.link_red, .link_slide {
   background-color: #fb565a;
+  text-align: center;
 }
 
-.link_red:hover, .link_red:focus, .link_slide:hover, .link_slide:focus {
-  background-color: #e74246;
+/*
+.slide-button {
+  padding: 19px 55px 18px 53px;
+} */
+
+.services-list {
+  list-style: none;
 }
 
-.link_red:active, .link_slide:active {
-  background-color: #d7373b;
-}
-
-.link_green {
-  background-color: #00ca74;
-}
-
-.link_green:hover, .link_green:focus {
-  background-color: #00bc6c;
-}
-
-.link_green:active {
-  background-color: #00aa62;
-}
-
-.link_yellow {
-  background-color: #efc84a;
-}
-
-.link_yellow:hover, .link_yellow:focus {
-  background-color: #eab534;
-}
-
-.link_yellow:active {
-  background-color: #e5a722;
-}
-
-.services_list h3 {
+.services-title {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.about_left h3 {
+/*
+.button-red, .button-green, .button-yellow {
+  padding: 19px 39px 18px 39px;
+} */
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.about-left-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
-.about_left h4, .about_right h4 {
+.about-left h4, .about-right h4 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.first_row {
+table {
+  border-spacing: 25px 27px;
+}
+
+.table-first-row {
   font-size: 45px;
   line-height: 10px;
   font-weight: bold;
 }
 
-.second_row {
+.table-second-row {
   line-height: 18px;
   color: #283136;
 }
 
-.partners_list {
+.partners-list {
   list-style: none;
 }
 
-.partners_list a {
+.partners-list a {
   opacity: 0.2;
 }
 
-.partners_list a:hover, .partners_list a:focus {
+.partners-list a:hover, .partners-list a:focus {
   opacity: 1;
 }
 
-.partners_list a:active {
+.partners-list a:active {
   opacity: 0.1;
 }
 
-.contacts h3 {
+.contacts h3, .popup-link h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.contacts p {
+.contacts p, .items-popup p {
   line-height: 18px;
   color: #666666;
 }
 
-.popup {
+/*
+.popup-form {
   display: none;
-}
+} */
 
-.social_list {
+.social-list {
   list-style: none;
 }
 
-.link_social {
+.social-list a {
   background-color: #e1e1e1;
 }
 
-.promo h3 {
+.promo-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -221,12 +202,20 @@ a.navigation_active {
   color: #444444;
 }
 
-.filter label {
-  line-height: 20px;
-  color: #283136;
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.price_range ul, .filter_radio, .filter_checkbox {
+.options-price-range input {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.options-price-range, .options-grid-radio,
+.options-special-checkbox {
   list-style: none;
 }
 
@@ -237,76 +226,161 @@ legend {
   font-weight: bold;
 }
 
-.send_form {
+.options-special-checkbox label {
+  line-height: 20px;
+  color: #283136;
+}
+
+.submit-options-button {
   line-height: 18px;
   font-weight: 500;
   background-color: #eeeeee;
   text-transform: uppercase;
 }
 
-.send_form:hover, .send_form:focus {
+.submit-options-button:hover, .submit-options-button:focus {
   background-color: #dfdfdf;
 }
 
-.send_form:active {
+.submit-options-button:active {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort_title {
+.items-sort p {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.price_range label {
+.options-price label {
   line-height: 22px;
   color: #283136;
   text-transform: uppercase;
 }
 
-.price_range input {
-  background-color: #eeeeee;
-}
-
-.items_sort--options, .items_sort--order, .items_list, .pagination_list {
+.items-sort-options, .items-sort-order, .items-list, .pagination-list {
   list-style: none;
 }
 
-.pagination_list a {
+.pagination-list a {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
   background-color: #eeeeee;
 }
 
-.pagination_list a:hover, .pagination_list a:focus {
+.pagination-list a:hover, .pagination-list a:focus {
   background-color: #dfdfdf;
 }
 
-.pagination_list a:active {
+.pagination-list a:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination_list a:visited {
+.pagination-list a:visited {
   color: #000000;
 }
 
-.items_sort--options a {
+.items-sort-options a {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.items_sort--options a:hover, .items_sort--options a:focus {
+.items-sort-options a:hover, .items-sort-options a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.items_sort--options a:active {
+.items-sort-options a:active {
   color: #000000;
 }
 
+.slide-button:hover, .slide-button:focus {
+  background-color: #e74246;
+}
+
+.slide-button:active {
+  background-color: #d7373b;
+}
+
+.button-red:hover, .button-red:focus {
+  background-color: #e74246;
+}
+
+.button-red:active {
+  background-color: #d7373b;
+}
+
+.button-green:hover, .button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-yellow:hover, .button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+.social-list a:hover, .social-list a:focus {
+  background-color: #e74246;
+}
+
+.social-list a:active {
+  background-color: #d7373b;
+}
+
+.submit-options-button:hover, .submit-options-button:focus,
+.pagination-list a:hover, .pagination-list a:focus {
+  background-color: #dfdfdf;
+}
+
+.submit-options-button:active, .pagination-list a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-link:hover, .popup-link:focus {
+  color: #fb565a;
+}
+
+.popup-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-form-title {
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.popup-form-title input {
+  opacity: 0.5;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(68, 68, 68, 0.5);
+  border: solid 2px #d7dcde;
+}
+
+.popup-form-title input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.popup-form-title input:focus {
+  color: #444444;
+  border: solid 2px #000000;
+}
+
+.popup-form-title input:invalid {
+  color: #e74246;
+  border: solid 2px #e74246;
+}

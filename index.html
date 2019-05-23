@@ -40,29 +40,29 @@
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section class="intro">
-        <div class="intro-slide-one">
-          <img src="img/slide-picture1.jpg" width="698" height="413" alt="Долго, дорого, скрупулезно.">
+        <div class="slide slide-one">
+          <img src="img/slide-picture1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
           <h2>Долго, дорого,<br>скрупулезно.</h2>
           <p>
             Математически выверенный дизайн для вашего сайта или мобильного приложения.
           </p>
-          <a href="#">Узнать больше</a>
+          <a class="button slide-button" href="#">Узнать больше</a>
         </div>
-        <div class="intro-slide-two">
-          <img src="img/slide-picture2.jpg" width="663" height="430" alt="Любим математику как никто другой">
+        <div class="slide slide-two">
+          <img src="img/slide-picture2.png" width="663" height="430" alt="Любим математику как никто другой">
           <h2>Любим математику<br>как никто другой</h2>
           <p>
             Никакого креатива, только математические формулы для расчета идеальных пропорций.
           </p>
-          <a href="#">Узнать больше</a>
+          <a class="button slide-button" href="#">Узнать больше</a>
         </div>
-        <div class="intro-slide-three">
-          <img src="img/slide-picture3.jpg" width="759" height="411" alt="Только ночь, только хардкор">
+        <div class="slide slide-three">
+          <img src="img/slide-picture3.png" width="759" height="411" alt="Только ночь, только хардкор">
           <h2>Только ночь,<br>только хардкор</h2>
           <p>
             Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
           </p>
-          <a href="#">Узнать больше</a>
+          <a class="button slide-button" href="#">Узнать больше</a>
         </div>
         <ul class="intro-button-list">
           <li>
@@ -81,28 +81,28 @@
         <ul class="services-list">
           <li>
             <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-            <h3>Веб-сайты</h3>
+            <h3 class="services-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
+            <a class="button button-red" href="#">Заказать</a>
           </li>
           <li>
             <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-            <h3>Приложения</h3>
+            <h3 class="services-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <a class="button button-green" href="#">Заказать</a>
           </li>
           <li>
             <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-            <h3>Презентации</h3>
+            <h3 class="services-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <a class="button button-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-left">
-          <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
+          <h3 class="about-left-title">Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
           </p>
           <h4>Выполняем заказы на разработку:</h4>
@@ -157,31 +157,31 @@
     </main>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map.jpg" width="1140" height="416" alt="Карта">
+      <img src="img/map.jpg" width="1440" height="416" alt="Карта">
       <div class="contacts">
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <button>Напишите нам</button>
+        <button class="button popup-button">Напишите нам</button>
       </div>
     </section>
     <div class="popup-form">
       <button aria-label="Закрыть форму обратной связи">Закрыть</button>
       <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-        <label class="title">
+        <label class="popup-form-title">
           Ваше имя:
           <input name="your_name" type="text" placeholder="Имя Фамилия" required>
         </label>
-        <label class="title">
+        <label class="popup-form-title">
           Ваш e-mail:
           <input name="email" type="text" placeholder="email@example.com" required>
         </label>
-        <label class="title">
+        <label class="popup-form-title">
           Текст письма:
           <textarea name="text" placeholder="В свободной форме" required></textarea>
         </label>
-        <button type="submit" value="Отправить">Отправить</button>
+        <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
     <footer>
@@ -205,7 +205,7 @@
         </ul>
       </section>
       <div class="promo">
-        <h3>Давайте дружить, это выгодно!</h3>
+        <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
