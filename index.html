@@ -8,12 +8,12 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="main-header">
+      <nav class="main-navigation">
         <a href="#">
-          <img class="main_logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
+          <img class="main-header-logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
         </a>
-        <ul class="navigation_list">
+        <ul class="site-navigation">
           <li>
             <a href="#">Студия</a>
           </li>
@@ -27,10 +27,10 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation_cart">
+        <ul class="cart-navigation">
           <li>
             <a href="#">
-              <img class="cart_icon" src="img/cart-icon.svg">
+              <img class="cart-icon" src="img/cart-icon.svg">
               <span>Корзина</span>
             </a>
           </li>
@@ -39,32 +39,32 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-      <section class="slide_block">
-        <div class="slide slide--one">
+      <section class="intro">
+        <div class="intro-slide-one">
           <img src="img/slide-picture1.jpg" width="698" height="413" alt="Долго, дорого, скрупулезно.">
           <h2>Долго, дорого,<br>скрупулезно.</h2>
           <p>
             Математически выверенный дизайн для вашего сайта или мобильного приложения.
           </p>
-          <a href="#" class="link_slide link_text">Узнать больше</a>
+          <a href="#">Узнать больше</a>
         </div>
-        <div class="slide slide--two">
+        <div class="intro-slide-two">
           <img src="img/slide-picture2.jpg" width="663" height="430" alt="Любим математику как никто другой">
           <h2>Любим математику<br>как никто другой</h2>
           <p>
             Никакого креатива, только математические формулы для расчета идеальных пропорций.
           </p>
-          <a href="#" class="link_slide link_text">Узнать больше</a>
+          <a href="#">Узнать больше</a>
         </div>
-        <div class="slide slide--three">
+        <div class="intro-slide-three">
           <img src="img/slide-picture3.jpg" width="759" height="411" alt="Только ночь, только хардкор">
           <h2>Только ночь,<br>только хардкор</h2>
           <p>
             Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
           </p>
-          <a href="#" class="link_slide link_text">Узнать больше</a>
+          <a href="#">Узнать больше</a>
         </div>
-        <ul class="slide_controls">
+        <ul class="intro-button-list">
           <li>
             <button></button>
           </li>
@@ -78,30 +78,30 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services_list">
+        <ul class="services-list">
           <li>
             <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="link_service link_red link_text">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
           <li>
             <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="link_service link_green link_text">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
           <li>
             <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="link_service link_yellow link_text">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
-        <div class="about_left">
+        <div class="about-left">
           <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
           </p>
@@ -112,16 +112,16 @@
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
         </div>
-        <div class="about_right">
+        <div class="about-right">
           <img src="img/nerds-picture.jpg" width="360" height="208" alt="Дизайн-студия Нёрдс">
           <h4>С 2004 года любим точность во всем:</h4>
           <table>
-            <tr class="first_row">
+            <tr class="table-first-row">
               <td>146<sup>%</sup></td>
               <td>100<sup>%</sup></td>
               <td>50<sup>%</sup></td>
             </tr>
-            <tr class="second_row">
+            <tr class="table-second-row">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -131,7 +131,7 @@
       </section>
       <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <ul class="partners_list">
+        <ul class="partners-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML академия">
               <img src="img/htmlacdemy-logo.jpg" width="199" height="68" alt="HTML Academy">
@@ -162,43 +162,43 @@
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <button class="contact_button link_red link_text">Напишите нам</button>
+        <button>Напишите нам</button>
       </div>
     </section>
-    <div class="popup">
+    <div class="popup-form">
       <button aria-label="Закрыть форму обратной связи">Закрыть</button>
+      <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-          <h3>Напишите нам</h3>
-          <label class="title">
-            Ваше имя:
-            <input name="your_name" type="text" placeholder="Имя Фамилия" required>
-          </label>
-          <label class="title">
-            Ваш e-mail:
-            <input name="email" type="text" placeholder="email@example.com" required>
-          </label>
-          <label class="title">
-            Текст письма:
-            <textarea name="text" placeholder="В свободной форме" required></textarea>
-          </label>
-          <button type="submit" value="Отправить">Отправить</button>
+        <label class="title">
+          Ваше имя:
+          <input name="your_name" type="text" placeholder="Имя Фамилия" required>
+        </label>
+        <label class="title">
+          Ваш e-mail:
+          <input name="email" type="text" placeholder="email@example.com" required>
+        </label>
+        <label class="title">
+          Текст письма:
+          <textarea name="text" placeholder="В свободной форме" required></textarea>
+        </label>
+        <button type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
     <footer>
       <section class="social">
-        <ul class="social_list">
+        <ul class="social-list">
           <li>
-            <a class="link_social link_red" href="#">
+            <a href="#">
               <img src="img/vk-icon.svg" alt="VK">
             </a>
           </li>
           <li>
-            <a class="link_social link_red" href="#">
+            <a href="#">
               <img src="img/fb-icon.svg" alt="FB">
             </a>
           </li>
           <li>
-            <a class="link_social link_red" href="#">
+            <a href="#">
               <img src="img/insta-icon.svg" alt="Instagram">
             </a>
           </li>
