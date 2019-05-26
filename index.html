@@ -11,25 +11,25 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="#">
-          <img class="main-header-logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
+          <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="#">Студия</a>
+            <a class="site-navigation-link" href="#">Студия</a>
           </li>
           <li>
-            <a href="#">Клиенты</a>
+            <a class="site-navigation-link" href="#">Клиенты</a>
           </li>
           <li>
-            <a href="shop.html">Магазин</a>
+            <a class="site-navigation-link" href="shop.html">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="cart-navigation">
           <li>
-            <a href="#">
+            <a class="cart-navigation-link" href="#">
               <img class="cart-icon" src="img/cart-icon.svg">
               <span>Корзина</span>
             </a>
@@ -169,18 +169,12 @@
       <button aria-label="Закрыть форму обратной связи">Закрыть</button>
       <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-        <label class="popup-form-title">
-          Ваше имя:
-          <input name="your_name" type="text" placeholder="Имя Фамилия" required>
-        </label>
-        <label class="popup-form-title">
-          Ваш e-mail:
-          <input name="email" type="text" placeholder="email@example.com" required>
-        </label>
-        <label class="popup-form-title">
-          Текст письма:
-          <textarea name="text" placeholder="В свободной форме" required></textarea>
-        </label>
+        <label for="name" class="popup-form-title">Ваше имя:</label>
+        <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
+        <label for="email" class="popup-form-title">Ваш e-mail:</label>
+        <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
+        <label for="message" class="popup-form-title">Текст письма:</label>
+        <textarea name="message" placeholder="В свободной форме" id="message" required></textarea>
         <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
@@ -188,17 +182,17 @@
       <section class="social">
         <ul class="social-list">
           <li>
-            <a href="#">
+            <a class="social-list-icon" href="#">
               <img src="img/vk-icon.svg" alt="VK">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-list-icon" href="#">
               <img src="img/fb-icon.svg" alt="FB">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-list-icon" href="#">
               <img src="img/insta-icon.svg" alt="Instagram">
             </a>
           </li>

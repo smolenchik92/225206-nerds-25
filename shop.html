@@ -11,25 +11,25 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html">
-          <img class="main-header-logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
+          <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="#">Студия</a>
+            <a class="site-navigation-link" href="#">Студия</a>
           </li>
           <li>
-            <a href="#">Клиенты</a>
+            <a class="site-navigation-link" href="#">Клиенты</a>
           </li>
           <li>
-            <a class="site-navigation-current" href="#">Магазин</a>
+            <a class="site-navigation-link site-navigation-current" href="#">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="cart-navigation">
           <li>
-            <a href="#">
+            <a class="cart-navigation-link" href="#">
               <img class="cart-icon" src="img/cart-icon.svg">
               <span>Корзина</span>
             </a>
@@ -62,7 +62,7 @@
             <ul class="options-grid-radio">
               <li>
                 <label>
-                  <input type="radio" name="grid_type" value="adaptive" checked>Адаптивная
+                  <input type="radio" name="grid_type" value="adaptive" disabled>Адаптивная
                 </label>
               </li>
               <li>
@@ -81,29 +81,24 @@
             <legend>Особенности:</legend>
             <ul class="options-special-checkbox">
               <li>
-                <label>
-                  <input type="checkbox" value="slider" name="attributes" checked>Слайдер
-                </label>
+                <input type="checkbox" value="slider" name="attributes" id="checkbox-one" checked>
+                <label for="checkbox-one">Слайдер</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" value="advantages_block" name="attributes">Блок преимуществ
-                </label>
+                <input type="checkbox" value="advantages_block" name="attributes" id="checkbox-two">
+                <label for="checkbox-two">Блок преимуществ</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" value="news" name="attributes" checked>Новости
-                </label>
+                <input type="checkbox" value="news" name="attributes" id="checkbox-three" checked>
+                <label for="checkbox-three">Новости</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" value="gallery" name="attributes">Галерея
-                </label>
+                <input type="checkbox" value="gallery" name="attributes" id="checkbox-four" disabled>
+                <label for="checkbox-four">Галерея</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" value="cart" name="attributes">Корзина
-                </label>
+                <input type="checkbox" value="cart" name="attributes" id="checkbox-five">
+                <label for="checkbox-five">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -116,21 +111,21 @@
           <p>Сортировать:</p>
           <ul class="items-sort-options">
             <li>
-              <a href="#">По цене</a>
+              <a class="items-sort-options-link items-sort-options-current" href="#">По цене</a>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <a class="items-sort-options-link" href="#">По типу</a>
             </li>
             <li>
-              <a href="#">По названию</a>
+              <a class="items-sort-options-link" href="#">По названию</a>
             </li>
           </ul>
           <ul class="items-sort-order">
             <li>
-              <a href="#" aria-label:"descending">down</a>
+              <a href="#" aria-label="По убыванию">down</a>
             </li>
             <li>
-              <a href="#" aria-label="ascending">up</a>
+              <a href="#" aria-label="По возрастанию">up</a>
             </li>
           </ul>
         </div>
@@ -187,16 +182,16 @@
         <div class="pagination">
           <ul class="pagination-list">
             <li>
-              <a class="pagination-current" href="#">1</a>
+              <a class="pagination-list-button pagination-list-current" href="#">1</a>
             </li>
             <li>
-              <a href="#">2</a>
+              <a class="pagination-list-button" href="#">2</a>
             </li>
             <li>
-              <a href="#">3</a>
+              <a class="pagination-list-button" href="#">3</a>
             </li>
-            <li class="pagination-next">
-              <a href="#">Следующая</a>
+            <li>
+              <a class="pagination-list-button" href="#">Следующая</a>
             </li>
           </ul>
         </div>
@@ -216,18 +211,12 @@
       <button aria-label="Закрыть форму обратной связи">Закрыть</button>
       <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-        <label class="popup-form-title">
-          Ваше имя:
-          <input name="your_name" type="text" placeholder="Имя Фамилия" required>
-        </label>
-        <label class="popup-form-title">
-          Ваш e-mail:
-          <input name="email" type="text" placeholder="email@example.com" required>
-        </label>
-        <label class="popup-form-title">
-          Текст письма:
-          <textarea name="text" placeholder="В свободной форме" required></textarea>
-        </label>
+        <label for="name" class="popup-form-title">Ваше имя:</label>
+        <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
+        <label for="email" class="popup-form-title">Ваш e-mail:</label>
+        <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
+        <label for="message" class="popup-form-title">Текст письма:</label>
+        <textarea name="message" placeholder="В свободной форме" id="message" required></textarea>
         <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
