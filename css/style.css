@@ -20,14 +20,35 @@ header {
 }
 
 .main-navigation {
+  width: auto;
+  padding: 50px 140px 20px 140px;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-navigation, .cart-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-navigation li {
+  display: inline;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 46px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
 }
 
 .main-header-logo:hover, .main-header-logo:focus {
@@ -97,10 +118,10 @@ header {
   text-align: center;
 }
 
-/*
+
 .slide-button {
   padding: 19px 55px 18px 53px;
-} */
+}
 
 .services-list {
   list-style: none;
