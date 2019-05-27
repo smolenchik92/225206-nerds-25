@@ -9,9 +9,9 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a href="#">
-          <img class="main-header-logo" src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
+      <nav class="main-navigation container">
+        <a>
+          <img src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
         </a>
         <ul class="site-navigation">
           <li>
@@ -27,19 +27,16 @@
             <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="cart-navigation">
-          <li>
-            <a class="cart-navigation-link" href="#">
-              <img class="cart-icon" src="img/cart-icon.svg">
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
+        <a class="cart-navigation-link" href="#">
+          <img class="cart-icon" src="img/cart-icon.svg">
+          <span>Корзина</span>
+        </a>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section class="intro">
+        <div class="container">
         <div class="slide slide-one">
           <img src="img/slide-picture1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
           <h2>Долго, дорого,<br>скрупулезно.</h2>
@@ -75,30 +72,32 @@
             <button></button>
           </li>
         </ul>
+      </div>
       </section>
+      <div class="container">
       <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
-          <li>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-            <h3 class="services-title">Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button button-red" href="#">Заказать</a>
-          </li>
-          <li>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-            <h3 class="services-title">Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button button-green" href="#">Заказать</a>
-          </li>
-          <li>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-            <h3 class="services-title">Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-yellow" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="services-list">
+            <li>
+              <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+              <h3 class="services-title">Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button button-red" href="#">Заказать</a>
+            </li>
+            <li>
+              <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+              <h3 class="services-title">Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="button button-green" href="#">Заказать</a>
+            </li>
+            <li>
+              <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+              <h3 class="services-title">Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="button button-yellow" href="#">Заказать</a>
+            </li>
+          </ul>
+        </section>
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-left">
@@ -154,6 +153,7 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
@@ -178,9 +178,8 @@
         <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
-    <footer>
-      <section class="social">
-        <ul class="social-list">
+    <footer class="container">
+      <ul class="social-list">
           <li>
             <a class="social-list-icon" href="#">
               <img src="img/vk-icon.svg" alt="VK">
@@ -197,7 +196,6 @@
             </a>
           </li>
         </ul>
-      </section>
       <div class="promo">
         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>

@@ -20,42 +20,35 @@ header {
 }
 
 .main-navigation {
-  width: auto;
-  padding: 50px 140px 20px 140px;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-navigation, .cart-navigation {
+.site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .site-navigation li {
-  display: inline;
-}
-
-.site-navigation li:not(:last-child) {
   margin-right: 46px;
 }
 
-.main-header-logo {
-  width: 160px;
-  height: 65px;
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
-.main-header-logo:hover, .main-header-logo:focus {
+.main-logo-link:hover, .main-logo-link:focus {
   opacity: 0.8;
 }
 
-.main-header-logo:active {
+.main-logo-link:active {
   opacity: 0.3;
 }
 
@@ -104,9 +97,15 @@ header {
   list-style: none;
 }
 
-.slide p, .services-list p,
-.about-left p, .about-left li {
+.slide p, .about-left p,
+.about-left li {
   color: #283136;
+}
+
+.services-list p {
+  color: #283136;
+  max-width: 300px;
+  margin-bottom: 35px;
 }
 
 .button {
@@ -124,7 +123,18 @@ header {
 }
 
 .services-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.services-list li {
+  margin-right: 100px;
+}
+
+.services-list li:last-child {
+  padding-right: 0;
 }
 
 .services-title {
@@ -134,10 +144,10 @@ header {
   text-transform: uppercase;
 }
 
-/*
 .button-red, .button-green, .button-yellow {
-  padding: 19px 39px 18px 39px;
-} */
+  padding: 17px 39px;
+  border-radius: 3px;
+}
 
 .button-green {
   background-color: #00ca74;
@@ -174,7 +184,18 @@ table {
 }
 
 .partners-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.partners-list li {
+  margin-right: 100px;
+}
+
+.partners-list li:last-child {
+  margin-right: 0;
 }
 
 .partners-list a {
@@ -205,17 +226,30 @@ table {
   background-color: #eeeeee;
 }
 
-/*
 .popup-form {
   display: none;
-} */
+}
 
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.social-list li {
+  padding-right: 12px;
+}
+
+.social-list li:last-child {
+  padding-right: 0;
 }
 
 .social-list-icon {
   background-color: #e1e1e1;
+  padding: 27px;
+  border-radius: 60px;
 }
 
 .promo-title {
@@ -434,4 +468,15 @@ legend {
 
 .popup-form-field:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
   color: #444444;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
 }
