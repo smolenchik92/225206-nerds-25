@@ -15,6 +15,10 @@ a {
   color: #000000;
 }
 
+nav .logo {
+  cursor: auto;
+}
+
 header {
   background-color:#eeeeee;
 }
@@ -70,6 +74,7 @@ header {
   text-decoration: underline;
   text-decoration-color: #fb565a;
   color: #000000;
+  cursor: auto;
 }
 
 .visually-hidden {
@@ -87,25 +92,46 @@ header {
   background-color: #eeeeee;
 }
 
-.slide h2, .page-title {
+.slide h2 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.slide img {
+  /*
+  position: absolute; */
 }
 
 .intro-button-list {
   list-style: none;
 }
 
-.slide p, .about-left p,
+.slide p {
+  color: #283136;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
 .about-left li {
   color: #283136;
+}
+
+.about-left p {
+  color: #283136;
+  margin-top: 0;
+  margin-bottom: 42px;
+  max-width: 616px;
 }
 
 .services-list p {
   color: #283136;
   max-width: 300px;
+  margin-top: 0;
   margin-bottom: 35px;
+  text-align: left;
 }
 
 .button {
@@ -115,11 +141,13 @@ header {
   text-transform: uppercase;
   background-color: #fb565a;
   text-align: center;
+  display: inline-block;
 }
 
-
 .slide-button {
-  padding: 19px 55px 18px 53px;
+  padding: 17px 54px;
+  display: inline-block;
+  border-radius: 3px;
 }
 
 .services-list {
@@ -127,14 +155,8 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
-}
-
-.services-list li {
-  margin-right: 100px;
-}
-
-.services-list li:last-child {
-  padding-right: 0;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 .services-title {
@@ -142,6 +164,14 @@ header {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: left;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.services {
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .button-red, .button-green, .button-yellow {
@@ -161,21 +191,69 @@ header {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
-.about-left h4, .about-right h4 {
+.about-left-list-title {
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.about-right-list-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 49px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.about-right img {
+  margin-bottom: 41px;
+}
+
+.about-left-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-left-list li {
+  margin-bottom: 28px;
+}
+
+.about-left-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+  max-width: 650px;
+}
+
+.about-right {
+  width: 360px;
 }
 
 table {
-  border-spacing: 25px 27px;
+  border-collapse: collapse;
 }
 
 .table-first-row {
   font-size: 45px;
-  line-height: 10px;
+  line-height: 45px;
   font-weight: bold;
+}
+
+.table-first-row td {
+  padding-right: 20px;
+  padding-bottom: 27px;
 }
 
 .table-second-row {
@@ -188,14 +266,8 @@ table {
   padding: 0;
   list-style: none;
   display: flex;
-}
-
-.partners-list li {
-  margin-right: 100px;
-}
-
-.partners-list li:last-child {
-  margin-right: 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .partners-list a {
@@ -231,11 +303,13 @@ table {
 }
 
 .social-list {
-  margin: 0;
+  width: 259px;
+  margin-right: 139px;
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+
 }
 
 .social-list li {
@@ -247,8 +321,12 @@ table {
 }
 
 .social-list-icon {
+  width: 79px;
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e1e1e1;
-  padding: 27px;
   border-radius: 60px;
 }
 
@@ -256,11 +334,15 @@ table {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .promo p {
   line-height: 22px;
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .page-title {
@@ -421,6 +503,11 @@ legend {
   opacity:0.3;
 }
 
+.social-flex {
+  display: flex;
+  align-items: center;
+}
+
 .submit-options-button:hover, .submit-options-button:focus {
   background-color: #dfdfdf;
 }
@@ -477,6 +564,15 @@ legend {
   box-sizing: border-box;
 }
 
-.footer {
+.intro-button-list {
   display: flex;
+  justify-content: center;
+}
+
+.intro-button-list li {
+  padding-right: 17px;
+}
+
+.intro-button-list li:last-child {
+  padding-right: 0px;
 }
