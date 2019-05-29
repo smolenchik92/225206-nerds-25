@@ -28,13 +28,14 @@
           </li>
         </ul>
         <a class="cart-navigation-link" href="#">
-          <img class="cart-icon" src="img/cart-icon.svg">
           <span>Корзина</span>
         </a>
       </nav>
     </header>
     <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <div class="container">
+      <div class="main-flex">
       <aside class="options">
         <form action="https://echo.htmlacademy.ru" method="post" name="filter">
           <fieldset class="options-price">
@@ -192,54 +193,56 @@
           </ul>
         </div>
       </section>
+    </div>
+    </div>
     </main>
     <section class="map">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-      <div class="contacts">
-        <h3>Nёrds design studio</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button class="button popup-button">Напишите нам</button>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <div class="contacts">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button popup-button">Напишите нам</button>
+        </div>
+      </section>
+      <div class="popup-form">
+        <button aria-label="Закрыть форму обратной связи">Закрыть</button>
+        <h3>Напишите нам</h3>
+        <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+          <label for="name" class="popup-form-title">Ваше имя:</label>
+          <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
+          <label for="email" class="popup-form-title">Ваш e-mail:</label>
+          <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
+          <label for="message" class="popup-form-title">Текст письма:</label>
+          <textarea name="message" placeholder="В свободной форме" id="message" required></textarea>
+          <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
+        </form>
       </div>
-    </section>
-    <div class="popup-form">
-      <button aria-label="Закрыть форму обратной связи">Закрыть</button>
-      <h3>Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
-        <label for="name" class="popup-form-title">Ваше имя:</label>
-        <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
-        <label for="email" class="popup-form-title">Ваш e-mail:</label>
-        <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
-        <label for="message" class="popup-form-title">Текст письма:</label>
-        <textarea name="message" placeholder="В свободной форме" id="message" required></textarea>
-        <button class="button submit-button" type="submit" value="Отправить">Отправить</button>
-      </form>
-    </div>
-    <footer>
-      <section class="social">
-        <ul class="social-list">
+      <footer class="container">
+        <div class="social-flex">
+          <ul class="social-list">
           <li>
-            <a href="#">
-              <img src="img/vk-icon.svg" alt="VK">
-            </a>
+           <a class="social-list-icon social-vk" href="#">
+            <img src="img/vk-icon.svg" alt="VK">
+          </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-list-icon social-fb" href="#">
               <img src="img/fb-icon.svg" alt="FB">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-list-icon social-insta" href="#">
               <img src="img/insta-icon.svg" alt="Instagram">
             </a>
           </li>
-        </ul>
-      </section>
-      <div class="promo">
-        <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </footer>
+          </ul>
+          <div class="promo">
+          <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
