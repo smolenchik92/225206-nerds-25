@@ -10,100 +10,75 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation container">
-        <a class=logo>
-          <img src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
-        </a>
+        <a><img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс"></a>
         <ul class="site-navigation">
-          <li>
-            <a class="site-navigation-link" href="#">Студия</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="#">Клиенты</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="shop.html">Магазин</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="#">Контакты</a>
-          </li>
+          <li><a class="site-navigation-link" href="#">Студия</a></li>
+          <li><a class="site-navigation-link" href="#">Клиенты</a></li>
+          <li><a class="site-navigation-link" href="shop.html">Магазин</a></li>
+          <li><a class="site-navigation-link" href="#">Контакты</a></li>
         </ul>
-        <a class="cart-navigation-link" href="#">
-          <span>Корзина</span>
-        </a>
+        <a class="cart-navigation-link" href="#"><span>Корзина</span></a>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-      <section class="intro">
+      <section class="slider">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div class="container">
-          <div class="slide slide-one">
-            <img src="img/slide-picture1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
-            <h2>Долго, дорого,<br>скрупулезно.</h2>
-            <p>
-            Математически выверенный дизайн для вашего сайта или мобильного приложения.
-            </p>
-            <a class="button slide-button" href="#">Узнать больше</a>
+          <div class="slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
           </div>
-          <ul class="intro-button-list">
-            <li>
-              <button>1</button>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br>скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="button" href="#">Узнать больше</a>
             </li>
-            <li>
-              <button>2</button>
+            <li class="slider-item">
+              <h3>Любим математику<br>как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button" href="#">Узнать больше</a>
             </li>
-            <li>
-              <button>3</button>
+            <li class="slider-item">
+              <h3>Только ночь,<br>только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button" href="#">Узнать больше</a>
             </li>
           </ul>
-          <div class="slide slide-two">
-            <img src="img/slide-picture2.png" width="663" height="430" alt="Любим математику как никто другой">
-            <h2>Любим математику<br>как никто другой</h2>
-            <p>
-            Никакого креатива, только математические формулы для расчета идеальных пропорций.
-            </p>
-            <a class="button slide-button" href="#">Узнать больше</a>
-          </div>
-          <div class="slide slide-three">
-            <img src="img/slide-picture3.png" width="759" height="411" alt="Только ночь, только хардкор">
-            <h2>Только ночь,<br>только хардкор</h2>
-            <p>
-            Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-            </p>
-            <a class="button slide-button" href="#">Узнать больше</a>
-          </div>
         </div>
       </section>
       <div class="container">
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
-          <ul class="services-list">
-            <li>
-              <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-              <h3 class="services-title">Веб-сайты</h3>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button button-red" href="#">Заказать</a>
-            </li>
-            <li>
-              <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-              <h3 class="services-title">Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button button-green" href="#">Заказать</a>
-            </li>
-            <li>
-              <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-              <h3 class="services-title">Презентации</h3>
-              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button button-yellow" href="#">Заказать</a>
-            </li>
-          </ul>
+            <ul class="services-list">
+              <li>
+                <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+                <h3 class="services-title">Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <a class="button-order button-order-red" href="#">Заказать</a>
+              </li>
+              <li>
+                <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+                <h3 class="services-title">Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="button-order button-order-green" href="#">Заказать</a>
+              </li>
+              <li>
+                <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+                <h3 class="services-title">Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="button-order button-order-yellow" href="#">Заказать</a>
+              </li>
+            </ul>
         </section>
         <section class="about">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-left">
-            <h3 class="about-left-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-            </p>
-            <h4 class="about-left-list-title">Выполняем заказы на разработку:</h4>
+            <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h4>Выполняем заказы на разработку:</h4>
             <ul class="about-left-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
@@ -112,7 +87,7 @@
           </div>
           <div class="about-right">
             <img src="img/nerds-picture.jpg" width="360" height="208" alt="Дизайн-студия Нёрдс">
-            <h4 class="about-right-list-title">С 2004 года любим точность во всем:</h4>
+            <h4>С 2004 года любим точность во всем:</h4>
             <table>
               <tr class="table-first-row">
                 <td>146<sup>%</sup></td>
@@ -156,13 +131,15 @@
     </main>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-      <div class="contacts">
-        <h3>Nёrds design studio</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button class="button popup-button">Напишите нам</button>
-      </div>
+      <div class="container temp-map">
+        <!--<img src="img/map.jpg" width="1440" height="416" alt="Карта">-->
+        <div class="contacts">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button-contact">Напишите нам</button>
+        </div>
+      </div> 
     </section>
     <div class="popup-form">
       <button aria-label="Закрыть форму обратной связи">Закрыть</button>
@@ -181,17 +158,17 @@
       <div class="social-flex">
         <ul class="social-list">
         <li>
-         <a class="social-list-icon social-vk" href="#">
+         <a class="social-list-icon" href="#">
           <img src="img/vk-icon.svg" alt="VK">
         </a>
         </li>
         <li>
-          <a class="social-list-icon social-fb" href="#">
+          <a class="social-list-icon" href="#">
             <img src="img/fb-icon.svg" alt="FB">
           </a>
         </li>
         <li>
-          <a class="social-list-icon social-insta" href="#">
+          <a class="social-list-icon" href="#">
             <img src="img/insta-icon.svg" alt="Instagram">
           </a>
         </li>
