@@ -36,11 +36,6 @@
               <button class="toggle"></button>
             </li>
           </ul>
-          <!--< class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
-          </div> -->
           <ul class="slider-list">
             <li class="slider-item slider-active">
               <img class="slider-image slider-image-one" src="img/slide-picture1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
@@ -76,7 +71,7 @@
               <li class="services-list-item">
                 <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
                 <h3 class="services-title">Веб-сайты</h3>
-                <p>Мир никогда не будет прежним после&nbspтого как увидит ваш сайт!</p>
+                <p>Мир никогда не будет прежним после&nbsp;того как увидит ваш сайт!</p>
                 <a class="button button-order button-red" href="#">Заказать</a>
               </li>
               <li class="services-list-item">
@@ -88,7 +83,7 @@
               <li class="services-list-item">
                 <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
                 <h3 class="services-title">Презентации</h3>
-                <p>Вы даже не подозреваете, насколько&nbspвы изумительны!</p>
+                <p>Вы даже не подозреваете, насколько&nbsp;вы изумительны!</p>
                 <a class="button button-order button-yellow" href="#">Заказать</a>
               </li>
             </ul>
@@ -153,6 +148,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="container map-container">
         <img class="map-image" src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
         <div class="contacts">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -161,10 +157,12 @@
         </div>
       </div> 
     </section>
-    <div class="popup-form">
-      <a class="close-popup" href="#" aria-label="Закрыть форму обратной связи"></a>
-      <h3 class="popup-form-title">Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+    <div class="popup">
+      <div class="popup-header">
+        <a class="close-popup" href="#" aria-label="Закрыть форму обратной связи"></a>
+        <h3 class="popup-form-title">Напишите нам</h3>
+      </div>
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" name="contact_us">
         <div class="input-wrap">
           <label for="name" class="popup-form-label">Ваше имя:</label>
           <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
@@ -178,9 +176,8 @@
         <button class="button button-popup-submit button-red" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
-    <footer class="container">
-      <div class="social-flex">
-        <ul class="social-list">
+    <footer class="container footer">
+      <ul class="social-list">
         <li class="social-list-item">
          <a class="social-list-link" href="#">
           <img class="social-list-icon" src="img/vk-icon.svg" alt="VK">
@@ -201,7 +198,6 @@
         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>
     </footer>
   </body>
 </html>

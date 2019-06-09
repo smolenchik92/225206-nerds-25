@@ -25,44 +25,44 @@
       <div class="container catalog">
         <aside class="filter">
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post" name="filter">
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset fieldset-range">
               <legend class="form-legend">Стоимость:</legend>
-              <ul class="filter-list">
+              <ul class="filter-list filter-range">
                 <li class="list-item-range">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range range-min"></div>
-                  <div class="range range-max"></div>
+                  <button type="button" class="range range-min"></button>
+                  <button type="button" class="range range-max"></button>
                 </li>
                 <li class="list-item-price">
-                  <label class="price-label" for="min-price">От</label>
+                  <label class="price-label price-min" for="min-price">От</label>
                   <input class="input-text" id="min-price" type="text" name="price" placeholder="0">
-                  <label class="price-label" for="max-price">До</label>
+                  <label class="price-label price-max" for="max-price">До</label>
                   <input class="input-text" id="max-price" type="text" name="price" placeholder="15000">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset fieldset-radio">
               <legend class="form-legend">Сетка:</legend>
-              <ul class="filter-list">
+              <ul class="filter-list filter-radio">
                 <li class="filter-list-item">
-                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="adaptive" checked>
-                  <label class="filter-label label-radio" for="adaptive">Адаптивная</label>
+                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="radio-one" value="adaptive" checked>
+                  <label class="filter-label label-radio" for="radio-one">Адаптивная</label>
                 </li>
                 <li class="filter-list-item">
-                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="fixed">
-                  <label class="filter-label label-radio" for="fixed">Фиксированная</label>
+                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="radio-two" value="fixed">
+                  <label class="filter-label label-radio" for="radio-two">Фиксированная</label>
                 </li>
                 <li class="filter-list-item">
-                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="flex">
-                  <label class="filter-label label-radio" for="flex">Резиновая</label>
+                  <input class="visually-hidden input-radio" type="radio" name="grid_type" id="radio-three" value="flex">
+                  <label class="filter-label label-radio" for="radio-three">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset fieldset-checkbox">
               <legend class="form-legend">Особенности:</legend>
-              <ul class="filter-list">
+              <ul class="filter-list filter-checkbox">
                 <li class="filter-list-item">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="slider" name="attributes" id="checkbox-one" checked>
                   <label class="filter-label label-checkbox" for="checkbox-one">Слайдер</label>
@@ -118,15 +118,15 @@
           </div>
           <ul class="items-list">
           <li class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
+            <img class="catalog-image" src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
             <div class="items-popup">
               <a class="popup-link" href="#"><h3 class="items-popup-title">Sedona</h3></a>
-              <p>Информационный сайт для&nbspтуристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <a class="button button-price button-red" href="#">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="pink">
+            <img class="catalog-image" src="img/img-pink.jpg" width="360" height="576" alt="pink">
             <div class="items-popup">
               <a class="popup-link" href=#><h3 class="items-popup-title">Pink app</h3></a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -134,23 +134,23 @@
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski">
+            <img class="catalog-image" src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski">
             <div class="items-popup">
               <a class="popup-link" href=#><h3 class="items-popup-title">Barbershop</h3></a>
-              <p>Сайт салона красоты. Для&nbspмужчин, да.</p>
+              <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
               <a class="button button-price button-red" href="#">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
+            <img class="catalog-image" src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
             <div class="items-popup">
               <a class="popup-link" href=#><h3 class="items-popup-title">Mishka</h3></a>
-              <p>Интернет-магазин вязаных&nbspигрушек</p>
+              <p>Интернет-магазин вязаных&nbsp;игрушек</p>
               <a class="button button-price button-red" href="#">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
+            <img class="catalog-image" src="img/img-aplus.jpg" width="360" height="576" alt="A+">
             <div class="items-popup">
               <a class="popup-link" href=#><h3 class="items-popup-title">A Plus</h3></a>
               <p>Лендинг курсов повышения квалификации</p>
@@ -158,7 +158,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="кваст">
+            <img class="catalog-image" src="img/img-kvast.jpg" width="360" height="576" alt="кваст">
             <div class="items-popup">
               <a class="popup-link" href=#><h3 class="items-popup-title">Кваст</h3></a>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -189,6 +189,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="container map-container">
         <img class="map-image" src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
         <div class="contacts">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -197,10 +198,10 @@
         </div>
       </div> 
     </section>
-    <div class="popup-form">
+    <div class="popup">
       <a class="close-popup" href="#" aria-label="Закрыть форму обратной связи"></a>
       <h3 class="popup-form-title">Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" name="contact_us">
         <div class="input-wrap">
           <label for="name" class="popup-form-label">Ваше имя:</label>
           <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
@@ -214,9 +215,8 @@
         <button class="button button-popup-submit button-red" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
-    <footer class="container">
-      <div class="social-flex">
-        <ul class="social-list">
+    <footer class="container footer">
+      <ul class="social-list">
         <li class="social-list-item">
          <a class="social-list-link" href="#">
           <img class="social-list-icon" src="img/vk-icon.svg" alt="VK">
@@ -237,6 +237,5 @@
         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>
     </footer>
 </html>
