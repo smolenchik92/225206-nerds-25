@@ -99,7 +99,6 @@ a {
 }
 
 .site-navigation-current {
-
   border-bottom: 2px solid #fb565a;
 }
 
@@ -201,7 +200,6 @@ a {
   padding-top: 68px;
   padding-bottom: 79px;
   margin: 0;
-
   position: relative;
   display: none;
 }
@@ -351,7 +349,7 @@ a {
 .button-pagination-current:hover,
 .button-pagination-current:focus,
 .button-pagination-current:active {
-  border: solid 3px #dbdbdb;
+  border: 3px solid #dbdbdb;
   background-color: #ffffff;
   padding-top: 13px;
   padding-right: 17px;
@@ -598,7 +596,6 @@ a {
 
 .contacts {
   width: 219px;
-
   padding-top: 49px;
   padding-right: 50px;
   padding-bottom: 46px;
@@ -635,7 +632,7 @@ a {
   resize: none;
   line-height: 18px;
   text-align: left;
-  border: solid 2px #d7dcde;
+  border: 2px solid #d7dcde;
 }
 
 .footer {
@@ -1089,7 +1086,7 @@ a {
 }
 
 .popup-form-field:invalid {
-  border: solid 2px #e74246;
+  border: 2px solid #e74246;
   color: #e74246;
 }
 
@@ -1100,7 +1097,7 @@ a {
   padding-bottom: 14px;
   line-height: 18px;
   text-align: left;
-  border: solid 2px #d7dcde;
+  border: 2px solid #d7dcde;
 }
 
 .popup-form-field::-webkit-input-placeholder,
@@ -1110,12 +1107,12 @@ textarea::-webkit-input-placeholder {
 
 .popup-form-field:hover,
 textarea:hover {
-  border: solid 2px #b4b9bb;
+  border: 2px solid #b4b9bb;
 }
 
 .popup-form-field:focus,
 textarea:focus {
-  border: solid 2px #000000;
+  border: 2px solid #000000;
 }
 
 .popup-form-field:focus::-webkit-input-placeholder,
