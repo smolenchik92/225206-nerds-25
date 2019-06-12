@@ -81,7 +81,7 @@ a {
 }
 
 .site-navigation-link {
-  padding-bottom: 12px;
+  padding-bottom: 9px;
 }
 
 .site-navigation-link:hover,
@@ -111,48 +111,69 @@ a {
 
 .slider {
   background-color: #eeeeee;
+  position: relative;
 }
 
 .slider-controls {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  bottom: 88px;
   left: 50%;
-  transform: translateX(-50%);
+  bottom: 104px;
   z-index: 1;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
-.slider-controls-item:not(:last-child) {
-  margin-right: 17px;
-}
-
-.toggle {
+.slider-controls-item {
+  position: relative;
+  display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: #ffffff;
-  border: none;
+  padding: 8px;
   border-radius: 50%;
-  position: relative;
-  padding: 0;
+  cursor: pointer;
 }
 
-.toggle-active::before {
+.slider-controls-item::after {
   content: "";
-  background-color: #ffffff;
-  border: 3px solid #c1c1c1;
-  width: 3px;
-  height: 3px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+}
 
+.radio-toggle-one:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+.radio-toggle-two:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+.radio-toggle-three:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+.radio-toggle-one:checked ~ .slider-controls .slider-controls-item-one::before,
+.radio-toggle-two:checked ~ .slider-controls .slider-controls-item-two::before,
+.radio-toggle-three:checked ~ .slider-controls .slider-controls-item-three::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .slider-list {
@@ -163,7 +184,7 @@ a {
 
 .slider-image {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -287,7 +308,7 @@ a {
 }
 
 .button-contact {
-  margin-top: 39px;
+  margin-top: 38px;
   padding-left: 44px;
   padding-right: 44px;
 }
@@ -357,7 +378,7 @@ a {
 
 .services {
   padding: 80px 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-list-item {
@@ -367,8 +388,8 @@ a {
 
 .services-title {
   margin: 0;
-  margin-top: 18px;
-  margin-bottom: 17px;
+  margin-top: 20px;
+  margin-bottom: 16px;
   padding: 0;
   font-size: 24px;
   line-height: 30px;
@@ -378,7 +399,7 @@ a {
 
 .services-list p {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   padding: 0;
   color: #283136;
   text-align: left;
@@ -394,7 +415,7 @@ a {
 
 .about-left {
   max-width: 650px;
-  padding-top: 74px;
+  padding-top: 76px;
 }
 
 .about-left-main-title {
@@ -410,14 +431,14 @@ a {
   color: #283136;
   padding: 0;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .about-left-title {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -456,7 +477,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 29px;
+  margin-top: 30px;
   margin-bottom: 41px;
   padding: 0;
 }
@@ -492,7 +513,7 @@ table {
 }
 
 .table-second-row td {
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 0;
   line-height: 18px;
 }
@@ -573,18 +594,20 @@ table {
 
 .contacts {
   width: 219px;
-  min-height: 207px;
-  padding-top: 46px;
+
+  padding-top: 49px;
   padding-right: 50px;
   padding-bottom: 46px;
   padding-left:50px;
   background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 
 .contacts-title {
   padding: 0;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -592,19 +615,19 @@ table {
 
 .contacts p {
   margin: 0;
-  margin-top: 18px;
+  margin-top: 20px;
   width: 201px;
   line-height: 18px;
   color: #666666;
 }
 
 .popup-textarea {
-  margin-bottom: 47px;
-  width: 756px;
-  height: 114px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 103px;
   padding: 0;
-  /*padding-left: 15px;
-  padding-top: 14px;*/
+  padding-left: 13px;
+  padding-top: 11px;
   resize: none;
   line-height: 18px;
   text-align: left;
@@ -614,7 +637,7 @@ table {
 .footer {
   display: flex;
   align-items: center;
-  padding-top: 69px;
+  padding-top: 70px;
   padding-bottom: 69px;
 }
 
@@ -680,9 +703,9 @@ table {
   font-weight: 500;
   text-align: center;
   padding-top: 68px;
-  padding-bottom: 108px;
+  padding-bottom: 107px;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 57px;
   background-color: #eeeeee;
 }
 
@@ -702,7 +725,7 @@ table {
 }
 
 .filter-checkbox {
-  padding-top: 14px;
+  padding-top: 16px;
 }
 
 .filter-list-item {
@@ -855,7 +878,7 @@ table {
 }
 
 .pagination-list li {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .pagination-list li:last-child {
@@ -865,7 +888,7 @@ table {
 .items-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -977,8 +1000,11 @@ table {
 }
 
 .popup {
-  padding-top: 73px;
-  /*padding-bottom: 84px;*/
+  width: 960px;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 65px;
+  padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -987,8 +1013,7 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  z-index: 1;
-  /*display: none;*/
+  display: none;
 }
 
 .popup-header {
@@ -1000,10 +1025,14 @@ table {
   flex-wrap: wrap;
 }
 
+.popup-show {
+  display: block;
+}
+
 .close-popup {
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 87px;
+  right: 90px;
   transform: translateY(-50%);
   background: url(../img/close-cross.svg) no-repeat center;
   width: 21px;
@@ -1021,12 +1050,16 @@ table {
 }
 
 .input-wrap {
-  display: inline-block;
   margin-bottom: 36px;
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 37px;
 }
 
-.input-wrap:first-child {
-  margin-right: 36px;
+.input-wrap:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 16px;
 }
 
 .popup-form-title {
@@ -1034,14 +1067,14 @@ table {
   line-height: 45px;
   font-weight: 500;
   margin: 0;
-  /*margin-bottom: 49px;*/
+  margin-bottom: 44px;
 }
 
 .popup-form label {
   line-height: 18px;
   font-weight: bold;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .popup-form-field:invalid {
@@ -1050,8 +1083,8 @@ table {
 }
 
 .popup-form-field {
-  width: 340px;
-  padding-left: 16px;
+  width: 100%;
+  padding-left: 13px;
   padding-top: 14px;
   padding-bottom: 14px;
   line-height: 18px;
@@ -1095,7 +1128,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .fieldset-radio {
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 
 .fieldset-checkbox {
@@ -1107,16 +1140,19 @@ textarea:focus::-webkit-input-placeholder {
   justify-content: space-between;
 }
 
+.items {
+  width: 761px;
+}
+
 .items-sort {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   margin-bottom: 55px;
 }
 
 .items-popup-title {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   padding: 0;
   font-size: 18px;
   line-height: 30px;
@@ -1125,7 +1161,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .items-popup {
-  padding-top: 27px;
+  padding-top: 28px;
   background-color: #eeeeee;
   text-align: center;
   position: absolute;
@@ -1144,16 +1180,28 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .map {
-  padding: 56px 0;
+  padding: 0;
+  padding-top: 55px;
+  padding-bottom: 53px;
+  position: relative;
 }
 
 .map-container {
   position: relative;
 }
 
+.map iframe {
+  width: 100%;
+  height: 416px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
 .map-image {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1161,15 +1209,16 @@ textarea:focus::-webkit-input-placeholder {
 
 .map-marker {
   position: absolute;
-  top: 33px;
+  top: 37px;
   left: 700px;
+  z-index: 0;
 }
 
 .list-item-range {
   height: 41px;
   background-color: #f1f1f1;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
