@@ -768,7 +768,7 @@ a {
   font-size: 18px;
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
-  padding: 8px 15px;
+  padding: 8px 10px;
   width: 80px;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
@@ -1189,9 +1189,11 @@ textarea:focus::-webkit-input-placeholder {
 
 .map {
   padding: 0;
-  padding-top: 55px;
+  padding-top: 53px;
   padding-bottom: 53px;
   position: relative;
+  background: url(../img/map.jpg) no-repeat center;
+  background-size: contain;
 }
 
 .map-container {
@@ -1200,7 +1202,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .map iframe {
   width: 100%;
-  height: 416px;
+  height: 100%;
   position: absolute;
   z-index: 2;
   top: 0;
