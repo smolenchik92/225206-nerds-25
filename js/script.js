@@ -2,27 +2,13 @@ var button = document.querySelector(".button-contact");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".close-popup");
 var form = document.querySelector("[name=contact_us]");
-var form_your_name = document.querySelector("[name=your_name]");
-var form_email = document.querySelector("[name=email]");
-var form_message = document.querySelector("[name=message]");
-var isStorageSupport = true;
-var storage = "";
-  
-try {
-    storage = localStorage.getItem("name");
-} catch (err) {
-    isStorageSupport = false;
-}
+var formName = document.querySelector("[name=your_name]");
+var formEmail = document.querySelector("[name=email]");
+var formMessage = document.querySelector("[name=message]");
 
 button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("popup-show");
-    if (storage) {
-        form_your_name.value = storage;
-        form_email.focus();
-    } else {
-        form_your_name.focus();
-    }
 });
 
 close.addEventListener("click", function (evt) {
@@ -32,15 +18,11 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!form_your_name.value || !form_email.value || !form_message.value) {
+    if (!formName.value || !formEmail.value || !formMessage.value) {
         evt.preventDefault();
         popup.classList.remove("popup-error");
         popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("popup-error");
-    } else {
-        if (isStorageSupport) {
-            localStorage.setItem("name", form_your_name.value);
-        }
     }
   });
 
