@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.minimized.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation container">
-        <a class="logo-link" href="index.html"><img src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс"></a>
+        <a class="logo-link" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
@@ -39,7 +39,7 @@
                   <label class="price-label price-min" for="min-price">От</label>
                   <input class="input-text" id="min-price" type="text" name="price" placeholder="0">
                   <label class="price-label price-max" for="max-price">До</label>
-                  <input class="input-text" id="max-price" type="text" name="price" placeholder="15000">
+                  <input class="input-text" id="max-price" type="text" name="price" placeholder="15 000">
                 </li>
               </ul>
             </fieldset>
@@ -76,7 +76,7 @@
                   <label class="filter-label label-checkbox" for="checkbox-three">Новости</label>
                 </li>
                 <li class="filter-list-item">
-                  <input class="visually-hidden input-checkbox" type="checkbox" value="gallery" name="attributes" id="checkbox-four" disabled>
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="gallery" name="attributes" id="checkbox-four">
                   <label class="filter-label label-checkbox" for="checkbox-four">Галерея</label>
                 </li>
                 <li class="filter-list-item">
@@ -106,12 +106,12 @@
           <ul class="items-sort-order">
             <li class="items-sort-order-item">
               <a class="sort-controls sort-controls-current" aria-label="По убыванию">
-                <img src="img/icon-down-dir.svg" alt="По убыванию">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
               </a>
             </li>
             <li class="items-sort-order-item">
               <a class="sort-controls" href="#" aria-label="По возрастанию">
-                <img src="img/icon-up-dir.svg" alt="По возрастанию">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
               </a>
             </li>
           </ul>
@@ -189,13 +189,11 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sch!4v1560251556465!5m2!1sru!2sch" style="border:0" allowfullscreen></iframe>
       <div class="container map-container">
-        <img class="map-image" src="img/map.jpg" width="1440" height="416" alt="Карта">
-        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
         <div class="contacts">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <button class="button button-contact button-red">Напишите нам</button>
+          <a class="button button-contact button-red" href="form.html">Напишите нам</a>
         </div>
       </div> 
     </section>
@@ -205,40 +203,40 @@
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" name="contact_us">
         <div class="input-wrap">
           <label for="name" class="popup-form-label">Ваше имя:</label>
-          <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
+          <input class="popup-form-field" name="your_name" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия" id="name">
         </div>
         <div class="input-wrap">
           <label for="email" class="popup-form-label">Ваш e-mail:</label>
           <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
         </div>
         <label for="message" class="popup-form-label">Текст письма:</label>
-        <textarea class="popup-textarea" name="message" placeholder="В свободной форме" id="message" required></textarea>
+        <textarea class="popup-textarea" name="message" placeholder="В свободной форме" id="message"></textarea>
         <button class="button button-popup-submit button-red" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
     <footer class="container footer">
       <ul class="social-list">
         <li class="social-list-item">
-         <a class="social-list-link" href="#">
-          <img class="social-list-icon" src="img/vk-icon.svg" alt="VK">
-        </a>
-        </li>
-        <li class="social-list-item">
           <a class="social-list-link" href="#">
-            <img class="social-list-icon" src="img/fb-icon.svg" alt="FB">
+            <img class="social-list-icon" src="img/vk-icon.svg" width="26" height="15" alt="VK">
           </a>
         </li>
         <li class="social-list-item">
           <a class="social-list-link" href="#">
-            <img class="social-list-icon" src="img/insta-icon.svg" alt="Instagram">
+            <img class="social-list-icon" src="img/fb-icon.svg" width="12" height="22" alt="FB">
           </a>
         </li>
-        </ul>
-        <div class="promo">
+        <li class="social-list-item">
+          <a class="social-list-link" href="#">
+            <img class="social-list-icon" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+      <div class="promo">
         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.minimized.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.minimized.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -25,9 +25,9 @@
       <section class="slider">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="container">
-          <input class="visually-hidden radio-toggle-one" type="radio" id="radio-toggle-one" name="toggle" checked>
-          <input class="visually-hidden radio-toggle-two" type="radio" id="radio-toggle-two" name="toggle">
-          <input class="visually-hidden radio-toggle-three" type="radio" id="radio-toggle-three" name="toggle">
+          <input class="visually-hidden radio-toggle radio-toggle-one" type="radio" id="radio-toggle-one" name="toggle" checked>
+          <input class="visually-hidden radio-toggle radio-toggle-two" type="radio" id="radio-toggle-two" name="toggle">
+          <input class="visually-hidden radio-toggle radio-toggle-three" type="radio" id="radio-toggle-three" name="toggle">
           <div class="slider-controls">
             <label class="slider-controls-item slider-controls-item-one" for="radio-toggle-one">Первый</label>
             <label class="slider-controls-item slider-controls-item-two" for="radio-toggle-two">Второй</label>
@@ -64,26 +64,26 @@
       <div class="container">
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
-            <ul class="services-list">
-              <li class="services-list-item">
-                <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-                <h3 class="services-title">Веб-сайты</h3>
-                <p>Мир никогда не будет прежним после&nbsp;того как увидит ваш сайт!</p>
-                <a class="button button-order button-red" href="#">Заказать</a>
-              </li>
-              <li class="services-list-item">
-                <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-                <h3 class="services-title">Приложения</h3>
-                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                <a class="button button-order button-green" href="#">Заказать</a>
-              </li>
-              <li class="services-list-item">
-                <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-                <h3 class="services-title">Презентации</h3>
-                <p>Вы даже не подозреваете, насколько&nbsp;вы изумительны!</p>
-                <a class="button button-order button-yellow" href="#">Заказать</a>
-              </li>
-            </ul>
+          <ul class="services-list">
+            <li class="services-list-item">
+              <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+              <h3 class="services-title">Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после&nbsp;того как увидит ваш сайт!</p>
+              <a class="button button-order button-red" href="#">Заказать</a>
+            </li>
+            <li class="services-list-item">
+              <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+              <h3 class="services-title">Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="button button-order button-green" href="#">Заказать</a>
+            </li>
+            <li class="services-list-item">
+              <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+              <h3 class="services-title">Презентации</h3>
+              <p>Вы даже не подозреваете, насколько&nbsp;вы изумительны!</p>
+              <a class="button button-order button-yellow" href="#">Заказать</a>
+            </li>
+          </ul>
         </section>
         <section class="about">
           <h2 class="visually-hidden">О нас</h2>
@@ -145,14 +145,11 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sch!4v1560251556465!5m2!1sru!2sch" style="border:0" allowfullscreen></iframe>
       <div class="container map-container">
-        <!--
-        <img class="map-image" src="img/map.jpg" width="1440" height="416" alt="Карта">
-        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">-->
         <div class="contacts">
           <h3 class="contacts-title">Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <button class="button button-contact button-red">Напишите нам</button>
+          <a class="button button-contact button-red" href="form.html">Напишите нам</a>
         </div>
       </div> 
     </section>
@@ -162,40 +159,40 @@
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" name="contact_us">
         <div class="input-wrap">
           <label for="name" class="popup-form-label">Ваше имя:</label>
-          <input class="popup-form-field" name="your_name" type="text" placeholder="Имя Фамилия" id="name">
+          <input class="popup-form-field" name="your_name" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия" id="name">
         </div>
         <div class="input-wrap">
           <label for="email" class="popup-form-label">Ваш e-mail:</label>
           <input class="popup-form-field" name="email" type="email" placeholder="email@example.com" id="email">
         </div>
         <label for="message" class="popup-form-label">Текст письма:</label>
-        <textarea class="popup-textarea" name="message" placeholder="В свободной форме" id="message" required></textarea>
+        <textarea class="popup-textarea" name="message" placeholder="В свободной форме" id="message"></textarea>
         <button class="button button-popup-submit button-red" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
     <footer class="container footer">
       <ul class="social-list">
         <li class="social-list-item">
-         <a class="social-list-link" href="#">
-          <img class="social-list-icon" src="img/vk-icon.svg" alt="VK">
-        </a>
-        </li>
-        <li class="social-list-item">
           <a class="social-list-link" href="#">
-            <img class="social-list-icon" src="img/fb-icon.svg" alt="FB">
+            <img class="social-list-icon" src="img/vk-icon.svg" width="26" height="15" alt="VK">
           </a>
         </li>
         <li class="social-list-item">
           <a class="social-list-link" href="#">
-            <img class="social-list-icon" src="img/insta-icon.svg" alt="Instagram">
+            <img class="social-list-icon" src="img/fb-icon.svg" width="12" height="22" alt="FB">
           </a>
         </li>
-        </ul>
-        <div class="promo">
+        <li class="social-list-item">
+          <a class="social-list-link" href="#">
+            <img class="social-list-icon" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+      <div class="promo">
         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.minimized.js"></script>
   </body>
 </html>
