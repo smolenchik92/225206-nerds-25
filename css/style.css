@@ -1376,6 +1376,7 @@ textarea:focus::-webkit-input-placeholder {
   margin: 0 auto;
   text-align: center;
   max-width: 227px;
+  word-wrap: break-word;
 }
 
 .map {
